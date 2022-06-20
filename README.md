@@ -7,9 +7,14 @@ Backend service for the Coodesh "[Back-end Challenge 2021 🏅 - Space Flight Ne
 The service consumes the [Space Flight News API](https://api.spaceflightnewsapi.net/v3/documentation), saving articles about space news on its own 
 database and exposing them through its own API.
 
+Loom presentation link: https://www.loom.com/share/8030dc795bd94a3b9965c509cf8221ee
+
 ## Try it Live!
 
-https://space-flight-news-backend-node.herokuapp.com/
+Base URL: https://space-flight-news-backend-node.herokuapp.com/  
+Documentation URL: https://space-flight-news-backend-node.herokuapp.com/api  
+
+It might take a while for the service to answer on the first time.
 
 ## Technologies Used
 

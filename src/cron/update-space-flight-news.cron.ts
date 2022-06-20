@@ -1,4 +1,4 @@
-import { Cron } from "@nestjs/schedule";
+import { Cron, Timeout } from "@nestjs/schedule";
 import { HttpService } from "@nestjs/axios";
 import { Injectable, Logger } from "@nestjs/common";
 import { firstValueFrom } from "rxjs";
@@ -20,6 +20,7 @@ export class UpdateSpaceFlightNews {
     @InjectModel(Article.name) private readonly articleModel: Model<Article>,
   ) {}
 
+  //@Timeout(1000)
   @Cron("0 0 9 * * *")
   async importArticles() {
     const queryParams = new SpaceFlightNewsQueryParameters();
